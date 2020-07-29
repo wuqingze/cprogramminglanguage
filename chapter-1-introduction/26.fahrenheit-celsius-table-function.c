@@ -2,7 +2,7 @@
 
 float fahrToCelsius(float fahr);
 
-main()
+void main()
 {
 	float fahr, celsius;
 	int lower, upper, step;

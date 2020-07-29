@@ -4,7 +4,7 @@
 
 int myGetline(char line[], int maxline);
 
-main()
+void main()
 {
 	int len;
 	int lineLenLimit;

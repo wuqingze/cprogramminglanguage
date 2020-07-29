@@ -1,0 +1,35 @@
+nong     28348  0.0  0.1 254556 15476 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo1.sh ./demo1.sh
+nong     28349  0.0  0.1 254556 15476 pts/6    Sl   Jul25   1:23 /usr/bin/python /home/nong/.local/bin/when-changed demo10.sh ./demo10.sh
+nong     28350  0.0  0.1 254552 15476 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo11.sh ./demo11.sh
+nong     28351  0.0  0.1 254556 15480 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo12.sh ./demo12.sh
+nong     28352  0.0  0.1 254556 15484 pts/6    Sl   Jul25   1:20 /usr/bin/python /home/nong/.local/bin/when-changed demo13.sh ./demo13.sh
+nong     28353  0.0  0.1 254556 15484 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo14.sh ./demo14.sh
+nong     28354  0.0  0.1 254556 15480 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo15.sh ./demo15.sh
+nong     28355  0.0  0.1 254552 15488 pts/6    Sl   Jul25   1:24 /usr/bin/python /home/nong/.local/bin/when-changed demo16.sh ./demo16.sh
+nong     28356  0.0  0.1 254548 15476 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo17.sh ./demo17.sh
+nong     28357  0.0  0.1 254584 15476 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo18.sh ./demo18.sh
+nong     28358  0.0  0.1 254556 15480 pts/6    Sl   Jul25   1:20 /usr/bin/python /home/nong/.local/bin/when-changed demo19.sh ./demo19.sh
+nong     28359  0.0  0.1 254520 15476 pts/6    Sl   Jul25   1:23 /usr/bin/python /home/nong/.local/bin/when-changed demo2.sh ./demo2.sh
+nong     28360  0.0  0.1 254584 15476 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo20.sh ./demo20.sh
+nong     28361  0.0  0.1 254556 15484 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo21.sh ./demo21.sh
+nong     28362  0.0  0.1 254556 15480 pts/6    Sl   Jul25   1:23 /usr/bin/python /home/nong/.local/bin/when-changed demo22.sh ./demo22.sh
+nong     28363  0.0  0.1 254520 15484 pts/6    Sl   Jul25   1:23 /usr/bin/python /home/nong/.local/bin/when-changed demo23.sh ./demo23.sh
+nong     28364  0.0  0.1 254556 15500 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo24.sh ./demo24.sh
+nong     28365  0.0  0.1 254556 15508 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo25.sh ./demo25.sh
+nong     28366  0.0  0.1 254520 15496 pts/6    Sl   Jul25   1:19 /usr/bin/python /home/nong/.local/bin/when-changed demo26.sh ./demo26.sh
+nong     28368  0.0  0.1 254556 15500 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo28.sh ./demo28.sh
+nong     28370  0.0  0.1 254556 15480 pts/6    Sl   Jul25   1:23 /usr/bin/python /home/nong/.local/bin/when-changed demo3.sh ./demo3.sh
+nong     28371  0.0  0.1 254556 15424 pts/6    Tl   Jul25   0:46 /usr/bin/python /home/nong/.local/bin/when-changed demo30.sh ./demo30.sh
+nong     28372  0.0  0.1 254556 15428 pts/6    Tl   Jul25   0:46 /usr/bin/python /home/nong/.local/bin/when-changed demo31.sh ./demo31.sh
+nong     28373  0.0  0.1 254556 15428 pts/6    Tl   Jul25   0:47 /usr/bin/python /home/nong/.local/bin/when-changed demo32.sh ./demo32.sh
+nong     28374  0.0  0.1 254556 15504 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo33.sh ./demo33.sh
+nong     28375  0.0  0.1 254552 15480 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo34.sh ./demo34.sh
+nong     28376  0.0  0.1 254584 15480 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo3_0.sh ./demo3_0.sh
+nong     28377  0.0  0.1 254552 15480 pts/6    Sl   Jul25   1:20 /usr/bin/python /home/nong/.local/bin/when-changed demo4.sh ./demo4.sh
+nong     28378  0.0  0.1 254556 15484 pts/6    Sl   Jul25   1:20 /usr/bin/python /home/nong/.local/bin/when-changed demo5.sh ./demo5.sh
+nong     28379  0.0  0.1 254556 15480 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo6.sh ./demo6.sh
+nong     28380  0.0  0.1 254556 15484 pts/6    Sl   Jul25   1:21 /usr/bin/python /home/nong/.local/bin/when-changed demo7.sh ./demo7.sh
+nong     28381  0.0  0.1 254520 15480 pts/6    Sl   Jul25   1:22 /usr/bin/python /home/nong/.local/bin/when-changed demo8.sh ./demo8.sh
+nong     28382  0.0  0.1 254520 15480 pts/6    Sl   Jul25   1:20 /usr/bin/python /home/nong/.local/bin/when-changed demo9.sh ./demo9.sh
+nong      7829  1.5  0.2 254548 15744 pts/11   Sl   20:12   0:00 /usr/bin/python /home/nong/.local/bin/when-changed 1.hello.c ./compile.sh 1.hello.c
+nong      7839  0.0  0.0  14804  1192 pts/10   S    20:13   0:00 grep --color=auto when-changed

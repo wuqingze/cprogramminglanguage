@@ -6,7 +6,7 @@
 int myGetline(char line[], int maxline);
 char
 
-main()
+void main()
 {
 	int len;
 	int max;

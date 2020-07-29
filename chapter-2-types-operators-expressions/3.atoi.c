@@ -2,7 +2,7 @@
 
 int atoi(char[]);
 
-main()
+void main()
 {
 	int a = atoi("1234567890");
 	printf("%d\n", a);

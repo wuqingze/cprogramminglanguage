@@ -3,7 +3,7 @@
 #define IN	0
 #define OUT 1
 
-main()
+void main()
 {
 	int state;
 	int length, max;

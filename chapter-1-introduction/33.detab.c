@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+void main()
 {
 	int c, n, i;
 	int cur;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* count characters in input; 2nd version */
-main()
+void main()
 {
 	double nc;
 

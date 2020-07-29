@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+void main()
 {
 	int histogram[26];
 	int c, i, j;

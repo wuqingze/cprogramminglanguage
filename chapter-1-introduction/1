@@ -1,0 +1,24 @@
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/home/nong/.local/lib/python2.7/site-packages/watchdog/observers/api.py", line 203, in run
+    self.dispatch_events(self.event_queue, self.timeout)
+  File "/home/nong/.local/lib/python2.7/site-packages/watchdog/observers/api.py", line 376, in dispatch_events
+    handler.dispatch(event)
+  File "/home/nong/.local/lib/python2.7/site-packages/watchdog/events.py", line 336, in dispatch
+    }[event.event_type](event)
+  File "/home/nong/.local/lib/python2.7/site-packages/whenchanged/whenchanged.py", line 143, in on_modified
+    self.on_change(event.src_path)
+  File "/home/nong/.local/lib/python2.7/site-packages/whenchanged/whenchanged.py", line 129, in on_change
+    self.run_command(path)
+  File "/home/nong/.local/lib/python2.7/site-packages/whenchanged/whenchanged.py", line 105, in run_command
+    subprocess.call(new_command, shell=(len(new_command) == 1), env=self.process_env, stdout=stdout)
+  File "/usr/lib/python2.7/subprocess.py", line 172, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+

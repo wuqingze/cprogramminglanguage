@@ -2,7 +2,7 @@
 
 void squeeze(char[], int);
 
-main()
+void main()
 {
 	char s[] = "test";
 	squeeze(s, 't');

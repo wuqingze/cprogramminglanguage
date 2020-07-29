@@ -2,8 +2,9 @@
 
 int power(int m, int n);
 
-main()
+int main()
 {
+    printf("4==5%d\n", 4!=5);
 	int i;
 
 	for (i = 0; i < 10; ++i)

@@ -12,7 +12,7 @@
  * remove all of the comments in the C program
  */
 
-main()
+void main()
 {
 	int c;
 	int status, stringStatus;

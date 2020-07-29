@@ -2,24 +2,24 @@
 
 int htoi(char[]);
 
-main()
+void main()
 {
 	int n = htoi("0x123abc");
 	printf("%d\n", n);
-	n = htoi("0X123abc");
-	printf("%d\n", n);
-	n = htoi("123abc");
-	printf("%d\n", n);
-	n = htoi("FF");
-	printf("%d\n", n);
-	n = htoi("1F");
-	printf("%d\n", n);
-	n = htoi("D");
-	printf("%d\n", n);
-	n = htoi("3");
-	printf("%d\n", n);
-	n = htoi("3FQWE");
-	printf("%d\n", n);
+    n = htoi("0X123abc");
+    printf("%d\n", n);
+    n = htoi("123abc");
+    printf("%d\n", n);
+    n = htoi("FF");
+    printf("%d\n", n);
+    n = htoi("1F");
+    printf("%d\n", n);
+    n = htoi("D");
+    printf("%d\n", n);
+    n = htoi("3");
+    printf("%d\n", n);
+    n = htoi("3FQWE");
+    printf("%d\n", n);
 }
 
 int htoi(char s[])

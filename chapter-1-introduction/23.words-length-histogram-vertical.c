@@ -4,7 +4,7 @@
 #define OUT 1
 #define WORD_MAX_LENGTH 999
 
-main()
+void main()
 {
 	int state;
 	int length, maxLength, maxCount;

@@ -2,7 +2,7 @@
 
 int lower(int);
 
-main()
+void main()
 {
 	printf("%c\n", lower('S'));
 	printf("%c\n", lower('A'));

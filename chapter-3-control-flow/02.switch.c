@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-main()
+int main()
 {
 	int c, i, nwhite, nother, ndigit[10];
 
+    printf("hello world--------\n");
 	nwhite = nother = 0;
 	for (i = 0; i < 10; i++)
 		ndigit[i] = 0;

@@ -3,7 +3,7 @@
 void shellsort(int [], int);
 void printArr(int [], int);
 
-main()
+int main()
 {
 	int len = 12;
 	int v[] = {11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};

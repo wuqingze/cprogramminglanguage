@@ -1,7 +1,9 @@
 #include <ctype.h>
 #include <stdio.h>
 
-main()
+int atoi(char s[]);
+
+void main()
 {
 	printf("%d\n", atoi("123"));
 	printf("%d\n", atoi("+1"));

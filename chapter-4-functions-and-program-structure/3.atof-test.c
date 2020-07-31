@@ -3,7 +3,7 @@
 #define MAXLINE 100
 
 // compile with atof.c, mygetline.c
-main()
+void main()
 {
 	double sum, atof(char []);
 	char line[MAXLINE];

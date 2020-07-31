@@ -2,7 +2,7 @@
 
 #define swap(t, x, y) { t temp = x; x = y; y = temp; }
 
-int main()
+int void main()
 {
 	int x, y;
 	x = 1;

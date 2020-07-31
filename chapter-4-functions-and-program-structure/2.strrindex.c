@@ -8,7 +8,7 @@ int strrindex(char source[], char searchfor[]);
 
 char pattern[] = "ould";
 
-main()
+void main()
 {
 	char line[MAXLINE];
 	int found = 0;

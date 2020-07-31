@@ -2,7 +2,7 @@
 
 void printd(int n);
 
-int main()
+int void main()
 {
 	printd(-123456);
 }

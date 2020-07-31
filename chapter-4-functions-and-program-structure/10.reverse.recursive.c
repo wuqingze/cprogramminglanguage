@@ -4,7 +4,7 @@
 void reverse(char [], int, int);
 void swap(char s[], int i, int j);
 
-int main()
+int void main()
 {
 	char s[] = "Hello, World!!!";
 	reverse(s, 0, strlen(s) - 1);

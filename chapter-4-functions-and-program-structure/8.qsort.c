@@ -5,7 +5,7 @@
 void qsort(int v[], int left, int right);
 void printArr(int v[], int len);
 
-int main()
+int void main()
 {
 	int i;
 	int v[ARR_LEN] = { 4, 3, 1, 7, 9, 6, 2 };

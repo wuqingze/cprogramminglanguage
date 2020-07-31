@@ -3,7 +3,7 @@
 
 void itoa(int n, char s[]);
 
-int main()
+int void main()
 {
 	char s[1024];
 	int n = INT_MAX;

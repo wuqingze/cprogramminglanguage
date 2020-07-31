@@ -6,7 +6,7 @@
 void withRegister(void);
 void withoutRegister(void);
 
-int main()
+int void main()
 {
 	clock_t start, finish;
 	start = clock();

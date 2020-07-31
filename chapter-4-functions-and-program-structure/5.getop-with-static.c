@@ -7,7 +7,7 @@
 
 int getop(char []);
 
-int main()
+int void main()
 {
 	while (1) {
 		char s[MAX_LEN];

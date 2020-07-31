@@ -20,7 +20,7 @@
 	#include HDR
 #endif
 
-int main()
+int void main()
 {
 	printf("%s\n", OS);
 }

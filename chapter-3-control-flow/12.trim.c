@@ -3,7 +3,7 @@
 
 int trim(char[]);
 
-main()
+int main()
 {
 	char s[1024] = "Hello, World  ";
 	trim(s);

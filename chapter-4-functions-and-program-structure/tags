@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARR_LEN	8.qsort.c	3;"	d	file:
+BSD	12.conditional-inclusion.c	5;"	d	file:
+BUFSIZE	5.getop-with-static.c	4;"	d	file:
+BUFSIZE	getch.c	4;"	d	file:
+FUNC	calc.h	2;"	d
+HDR	12.conditional-inclusion.c	11;"	d	file:
+HDR	12.conditional-inclusion.c	13;"	d	file:
+HDR	12.conditional-inclusion.c	15;"	d	file:
+HDR	12.conditional-inclusion.c	17;"	d	file:
+LOOP_COUNT	6.register-variable.c	4;"	d	file:
+MAXLINE	1.simple-grep.c	3;"	d	file:
+MAXLINE	2.strrindex.c	4;"	d	file:
+MAXLINE	3.atof-test.c	3;"	d	file:
+MAXOP	4.reverse-polish-calculator.c	7;"	d	file:
+MAXVAL	stack.c	3;"	d	file:
+MAX_LEN	5.getop-with-static.c	5;"	d	file:
+MAX_VAR_LEN	4.reverse-polish-calculator.c	8;"	d	file:
+MSDOC	12.conditional-inclusion.c	7;"	d	file:
+NUMBER	5.getop-with-static.c	6;"	d	file:
+NUMBER	calc.h	1;"	d
+OS	sysv.h	1;"	d
+SYSTEM	12.conditional-inclusion.c	3;"	d	file:
+SYSV	12.conditional-inclusion.c	6;"	d	file:
+VAR	calc.h	3;"	d
+_strindex	1.simple-grep.c	/^int _strindex(char s[], char t[]){$/;"	f
+atof	atof.c	/^double atof(char s[])$/;"	f
+buf	getch.c	/^int buf[BUFSIZE];$/;"	v
+bufp	getch.c	/^int bufp = 0;$/;"	v
+duplicate	stack.c	/^void duplicate(void)$/;"	f
+empty	stack.c	/^void empty(void)$/;"	f
+getVar	4.reverse-polish-calculator.c	/^void getVar(char s[])$/;"	f
+get_line	3.atof-test.c	/^void get_line(char line[]){$/;"	f
+getch	getch.c	/^int getch(void)$/;"	f
+getchOne	getch.c	/^int getchOne(void)$/;"	f
+getop	5.getop-with-static.c	/^int getop(char s[])$/;"	f
+getop	getop.c	/^int getop(char s[])$/;"	f
+itoa	9.itoa-recursive.c	/^void itoa(int n, char s[])$/;"	f
+main	1.simple-grep.c	/^int main(){$/;"	f
+main	10.reverse.recursive.c	/^int void main()$/;"	f
+main	11.swap-macro.c	/^int void main()$/;"	f
+main	12.conditional-inclusion.c	/^int void main()$/;"	f
+main	2.strrindex.c	/^void main()$/;"	f
+main	3.atof-test.c	/^int main()$/;"	f
+main	4.reverse-polish-calculator.c	/^void main()$/;"	f
+main	5.getop-with-static.c	/^int void main()$/;"	f
+main	6.register-variable.c	/^int void main()$/;"	f
+main	7.printd.c	/^int void main()$/;"	f
+main	8.qsort.c	/^int void main()$/;"	f
+main	9.itoa-recursive.c	/^int void main()$/;"	f
+mathfunc	4.reverse-polish-calculator.c	/^void mathfunc(char s[])$/;"	f
+mygetline	1.simple-grep.c	/^int mygetline(char s[], int lim){$/;"	f
+mygetline	2.strrindex.c	/^int mygetline(char s[], int lim)$/;"	f
+mygetline	mygetline.c	/^int mygetline(char s[], int lim)$/;"	f
+pattern	1.simple-grep.c	/^char pattern[] = "ould";$/;"	v
+pattern	2.strrindex.c	/^char pattern[] = "ould";$/;"	v
+pop	stack.c	/^double pop(void)$/;"	f
+printArr	8.qsort.c	/^void printArr(int v[], int len)$/;"	f
+printd	7.printd.c	/^void printd(int n)$/;"	f
+push	stack.c	/^void push(double f)$/;"	f
+qsort	8.qsort.c	/^void qsort(int v[], int left, int right)$/;"	f
+reverse	10.reverse.recursive.c	/^void reverse(char s[], int left, int right)$/;"	f
+setVar	4.reverse-polish-calculator.c	/^void setVar(double varIndex, double value)$/;"	f
+sp	stack.c	/^int sp = 0;$/;"	v
+strindex	1.simple-grep.c	/^int strindex(char s[], char t[])$/;"	f
+strrindex	2.strrindex.c	/^int strrindex(char s[], char t[])$/;"	f
+strrindex	getop.c	/^int strrindex(char s[], char t[])$/;"	f
+swap	10.reverse.recursive.c	/^void swap(char s[], int i, int j)$/;"	f
+swap	11.swap-macro.c	3;"	d	file:
+swap	8.qsort.c	/^void swap(int v[], int i, int j)$/;"	f
+swap	stack.c	/^void swap(void)$/;"	f
+test_00	1.simple-grep.c	/^int test_00(){$/;"	f
+test_01	1.simple-grep.c	/^int test_01(){$/;"	f
+top	stack.c	/^void top(void)$/;"	f
+ungetch	getch.c	/^void ungetch(int c)$/;"	f
+ungetchOne	getch.c	/^void ungetchOne(int c)$/;"	f
+ungetchs	getch.c	/^void ungetchs(char s[])$/;"	f
+val	stack.c	/^double val[MAXVAL];$/;"	v
+value	getch.c	/^int value = EOF;$/;"	v
+variableFlags	4.reverse-polish-calculator.c	/^int variableFlags[MAX_VAR_LEN];	\/\/ if [0] is 0, means 'a' not set, if [0] is 1, means 'a' set$/;"	v
+variables	4.reverse-polish-calculator.c	/^double variables[MAX_VAR_LEN];$/;"	v
+withRegister	6.register-variable.c	/^void withRegister(void)$/;"	f
+withoutRegister	6.register-variable.c	/^void withoutRegister(void)$/;"	f

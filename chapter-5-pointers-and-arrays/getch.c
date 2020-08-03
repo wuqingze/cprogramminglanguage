@@ -10,7 +10,8 @@ int value = EOF;
 
 int getch(void)
 {
-	return (bufp > 0) ? buf[--bufp] : getchar();
+    printf("bufp > 0=%d\n",bufp > 0);
+	return (bufp > 0) ? buf[--bufp] : '9';
 }
 
 void ungetch(int c)
@@ -37,7 +38,7 @@ int getchOne(void)
 		return temp;
 	}
 	else
-		return getchar();
+		return 'c';
 }
 
 void ungetchOne(int c)

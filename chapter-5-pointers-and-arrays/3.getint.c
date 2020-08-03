@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include "getch.c"
 
 #define SIZE 10
 
@@ -26,7 +27,7 @@ int main()
 
 int getint(int *pn)
 {
-	int c, sign;
+	int c=0, sign=-1;
 
 	while (isspace(c = getch()))
 		;
@@ -43,8 +44,11 @@ int getint(int *pn)
 			return 0;
 		}
 	}
-	for (*pn = 0; isdigit(c); c = getch())
-		*pn = 10 * *pn + (c - '0');
+//	for (*pn = 0; c == '9'; c = getch()){
+//        printf("*pn=%d, c=%d\n", *pn, c);
+//		*pn = 10 * *pn + (c - '0');
+//   }
+    *pn = 10 * *pn + (c - '0');
 	*pn *= sign;
 	if (c != EOF)
 		ungetch(c);

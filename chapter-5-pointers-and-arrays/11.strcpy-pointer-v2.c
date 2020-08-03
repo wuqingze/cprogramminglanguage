@@ -9,6 +9,13 @@ int main()
 	mystrcpy(s, t);
 	printf("%s\n", s);
 
+
+    char *ptrt = t;
+    while(*ptrt != '\0'){
+        printf("%c", *ptrt++);
+    }
+    printf("\n");
+
 	return 0;
 }
 

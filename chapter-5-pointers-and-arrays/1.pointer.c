@@ -1,5 +1,8 @@
+#include <stdio.h>
+
 int main()
 {
+    printf("hello world\n");
 	int x = 1, y = 2, z[10];
 	int *ip;
 
@@ -7,6 +10,7 @@ int main()
 	y = *ip;
 	*ip = 0;
 	ip = &z[0];
+    printf("--------%d\n", z == ip);
 	
 	return 0;
 }

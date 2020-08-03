@@ -1,0 +1,193 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOCSIZE	6.alloc.c	1;"	d	file:
+ARR_SIZE	24.pointer-arrays-without-alloc.c	7;"	d	file:
+BRACKETS	42.dcl.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon1	file:
+BRACKETS	43.dcl-error-handle.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon2	file:
+BRACKETS	44.undcl.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon3	file:
+BUFSIZE	getch.c	4;"	d	file:
+DATATYPE_LEN	43.dcl-error-handle.c	7;"	d	file:
+MAXLEN	23.pointer-arrays.c	30;"	d	file:
+MAXLEN	24.pointer-arrays-without-alloc.c	34;"	d	file:
+MAXLEN	37.tail.c	5;"	d	file:
+MAXLEN	40.sort-with-f.c	4;"	d	file:
+MAXLEN	41.sort-with-d.c	4;"	d	file:
+MAXLEN	readlines-writelines.c	4;"	d	file:
+MAXLINE	30.find.c	3;"	d	file:
+MAXLINE	31.find.c	4;"	d	file:
+MAXLINE	34.entab.c	3;"	d	file:
+MAXLINES	23.pointer-arrays.c	5;"	d	file:
+MAXLINES	24.pointer-arrays-without-alloc.c	5;"	d	file:
+MAXLINES	37.tail.c	4;"	d	file:
+MAXLINES	38.pointers-to-functions.c	4;"	d	file:
+MAXLINES	39.sort-with-r.c	4;"	d	file:
+MAXLINES	40.sort-with-f.c	6;"	d	file:
+MAXLINES	41.sort-with-d.c	6;"	d	file:
+MAXOP	32.expr.c	4;"	d	file:
+MAXTOKEN	42.dcl.c	5;"	d	file:
+MAXTOKEN	43.dcl-error-handle.c	5;"	d	file:
+MAXTOKEN	44.undcl.c	19;"	d	file:
+MAXVAL	32.expr.c	56;"	d	file:
+NAME	42.dcl.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon1	file:
+NAME	43.dcl-error-handle.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon2	file:
+NAME	44.undcl.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon3	file:
+NUMBER	32.expr.c	5;"	d	file:
+PARENS	42.dcl.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon1	file:
+PARENS	43.dcl-error-handle.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon2	file:
+PARENS	44.undcl.c	/^enum { NAME, PARENS, BRACKETS };$/;"	e	enum:__anon3	file:
+SIZE	3.getint.c	4;"	d	file:
+SIZE	4.getfloat.c	4;"	d	file:
+_swap	2.swap.c	/^void _swap(int px, int py)$/;"	f
+a	27.year-month-day-pointer.c	/^char a[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};$/;"	v
+afree	6.alloc.c	/^void afree(char *p)$/;"	f
+alloc	6.alloc.c	/^char *alloc(int n)$/;"	f
+allocbuf	6.alloc.c	/^static char allocbuf[ALLOCSIZE];$/;"	v	file:
+allocp	6.alloc.c	/^static char *allocp = allocbuf;$/;"	v	file:
+atoi	21.atoi.c	/^int atoi(char *s)$/;"	f
+b	27.year-month-day-pointer.c	/^char b[] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};$/;"	v
+bubblesort	41.sort-with-d.c	/^void bubblesort(void *v[], int len, int (*comp)(void*, void*))$/;"	f
+buf	getch.c	/^int buf[BUFSIZE];$/;"	v
+bufp	getch.c	/^int bufp = 0;$/;"	v
+datatype	42.dcl.c	/^char datatype[MAXTOKEN];	\/\/ data type = char, int, etc.$/;"	v
+datatype	43.dcl-error-handle.c	/^char datatype[MAXTOKEN];	\/\/ data type = char, int, etc.$/;"	v
+day_of_year	25.year-month-day.c	/^int day_of_year(int year, int month, int day)$/;"	f
+day_of_year	27.year-month-day-pointer.c	/^int day_of_year(int year, int month, int day)$/;"	f
+daytab	25.year-month-day.c	/^static char daytab[2][13] = {$/;"	v	file:
+daytab	27.year-month-day-pointer.c	/^static char *daytab[2] = {a, b};$/;"	v	file:
+dcl	42.dcl.c	/^void dcl(void)$/;"	f
+dcl	43.dcl-error-handle.c	/^void dcl(void)$/;"	f
+dircmp	41.sort-with-d.c	/^int dircmp(const char *p1, const char *p2)$/;"	f
+dirdcl	42.dcl.c	/^void dirdcl(void)$/;"	f
+dirdcl	43.dcl-error-handle.c	/^void dirdcl(void)$/;"	f
+getch	getch.c	/^int getch(void)$/;"	f
+getchOne	getch.c	/^int getchOne(void)$/;"	f
+getfloat	4.getfloat.c	/^double getfloat(double *pn)$/;"	f
+getint	3.getint.c	/^int getint(int *pn)$/;"	f
+getop	32.expr.c	/^int getop(char *s, int argc, char **argv)$/;"	f
+gettoken	42.dcl.c	/^int gettoken(void)$/;"	f
+gettoken	43.dcl-error-handle.c	/^int gettoken(void)$/;"	f
+gettoken	44.undcl.c	/^int gettoken(void)$/;"	f
+isdircase	41.sort-with-d.c	/^char isdircase(const char c)$/;"	f
+isvalid_datatype	43.dcl-error-handle.c	/^int isvalid_datatype(const char* s)$/;"	f
+itoa	22.itoa.c	/^void itoa(int n, char *s)$/;"	f
+lineptr	23.pointer-arrays.c	/^char *lineptr[MAXLINES];$/;"	v
+lineptr	24.pointer-arrays-without-alloc.c	/^char *lineptr[MAXLINES];$/;"	v
+lineptr	38.pointers-to-functions.c	/^char *lineptr[MAXLINES];$/;"	v
+lineptr	39.sort-with-r.c	/^char *lineptr[MAXLINES];$/;"	v
+lineptr	40.sort-with-f.c	/^char *lineptr[MAXLINES];$/;"	v
+lineptr	41.sort-with-d.c	/^char *lineptr[MAXLINES];$/;"	v
+main	1.pointer.c	/^int main()$/;"	f
+main	10.strcpy-pointer-v1.c	/^int main()$/;"	f
+main	11.strcpy-pointer-v2.c	/^int main()$/;"	f
+main	12.strcpy-pointer-v3.c	/^int main()$/;"	f
+main	13.strcmp-array-subscript.c	/^int main()$/;"	f
+main	14.strcmp-pointer.c	/^int main()$/;"	f
+main	15.strcat-pointer.c	/^int main()$/;"	f
+main	16.strend.c	/^int main()$/;"	f
+main	17.strncpy.c	/^int main()$/;"	f
+main	18.strncat.c	/^int main()$/;"	f
+main	19.strncmp.c	/^int main()$/;"	f
+main	2.swap.c	/^int main()$/;"	f
+main	20.getline-pointer.c	/^int main()$/;"	f
+main	21.atoi.c	/^int main()$/;"	f
+main	22.itoa.c	/^int main()$/;"	f
+main	23.pointer-arrays.c	/^int main()$/;"	f
+main	24.pointer-arrays-without-alloc.c	/^int main()$/;"	f
+main	25.year-month-day.c	/^int main()$/;"	f
+main	26.pointer-array-init.c	/^int main()$/;"	f
+main	27.year-month-day-pointer.c	/^int main()$/;"	f
+main	28.echo-v1.c	/^main(int argc, char *argv[])$/;"	f
+main	29.echo-v2.c	/^main(int argc, char *argv[])$/;"	f
+main	3.getint.c	/^int main()$/;"	f
+main	30.find.c	/^main(int argc, char *argv[])$/;"	f
+main	31.find.c	/^main(int argc, char *argv[])$/;"	f
+main	32.expr.c	/^main(int argc, char **argv)$/;"	f
+main	33.detab.c	/^main(int argc, char *argv[])$/;"	f
+main	34.entab.c	/^main(int argc, char *argv[])$/;"	f
+main	35.detab-arg.c	/^main(int argc, char *argv[])$/;"	f
+main	36.entab-arg.c	/^main(int argc, char *argv[])$/;"	f
+main	37.tail.c	/^main(int argc, char *argv[])$/;"	f
+main	38.pointers-to-functions.c	/^main(int argc, char *argv[])$/;"	f
+main	39.sort-with-r.c	/^main(int argc, char *argv[])$/;"	f
+main	4.getfloat.c	/^int main()$/;"	f
+main	40.sort-with-f.c	/^main(int argc, char *argv[])$/;"	f
+main	41.sort-with-d.c	/^main(int argc, char *argv[])$/;"	f
+main	42.dcl.c	/^main()$/;"	f
+main	43.dcl-error-handle.c	/^main()$/;"	f
+main	44.undcl.c	/^main()$/;"	f
+main	5.strlen-pointer.c	/^int main()$/;"	f
+main	7.alloc.test.c	/^int main()$/;"	f
+main	8.strlen-address-arithmetic.c	/^int main()$/;"	f
+main	9.strcpy-array-subscript.c	/^int main()$/;"	f
+main	t.c	/^int main(){$/;"	f
+month_day	25.year-month-day.c	/^void month_day(int year, int yearday, int *pmonth, int *pday)$/;"	f
+month_day	27.year-month-day-pointer.c	/^void month_day(int year, int yearday, int *pmonth, int *pday)$/;"	f
+month_name	26.pointer-array-init.c	/^char *month_name(int n)$/;"	f
+myGetline	34.entab.c	/^int myGetline(char s[], int lim)$/;"	f
+mygetline	20.getline-pointer.c	/^int mygetline(char *s, int lim)$/;"	f
+mygetline	23.pointer-arrays.c	/^int mygetline(char *s, int lim)$/;"	f
+mygetline	24.pointer-arrays-without-alloc.c	/^int mygetline(char *s, int lim)$/;"	f
+mygetline	mygetline.c	/^int mygetline(char s[], int lim)$/;"	f
+mygetline	readlines-writelines.c	/^int mygetline(char *s, int lim)$/;"	f
+mystrcat	15.strcat-pointer.c	/^void mystrcat(char *s, char *t)$/;"	f
+mystrcmp	13.strcmp-array-subscript.c	/^int mystrcmp(char *s, char *t)$/;"	f
+mystrcmp	14.strcmp-pointer.c	/^int mystrcmp(char *s, char *t)$/;"	f
+mystrcpy	10.strcpy-pointer-v1.c	/^void mystrcpy(char *s, char *t)$/;"	f
+mystrcpy	11.strcpy-pointer-v2.c	/^void mystrcpy(char *s, char *t)$/;"	f
+mystrcpy	12.strcpy-pointer-v3.c	/^void mystrcpy(char *s, char *t)$/;"	f
+mystrncat	18.strncat.c	/^char *mystrncat(char *s, char *ct, int n)$/;"	f
+mystrncmp	19.strncmp.c	/^int mystrncmp(char *cs, char *ct, int n)$/;"	f
+mystrncpy	17.strncpy.c	/^char *mystrncpy(char *s, char *ct, int n)$/;"	f
+n0	27.year-month-day-pointer.c	/^char n0[][10] = { {"Jan"}, {"Feb"} };$/;"	v
+n1	27.year-month-day-pointer.c	/^char n1[][10] = { "Jan", "Feb" };$/;"	v
+name	27.year-month-day-pointer.c	/^char *name[] = {"Jan", "Feb"};$/;"	v
+name	42.dcl.c	/^char name[MAXTOKEN];	\/\/ identifier name$/;"	v
+name	43.dcl-error-handle.c	/^char name[MAXTOKEN];	\/\/ identifier name$/;"	v
+numcmp	numcmp.c	/^int numcmp(char *s1, char *s2)$/;"	f
+out	42.dcl.c	/^char out[1000];	\/\/ output string$/;"	v
+out	43.dcl-error-handle.c	/^char out[1000];	\/\/ output string$/;"	v
+out	44.undcl.c	/^char out[1000];	\/\/ output string$/;"	v
+pop	32.expr.c	/^double pop(void)$/;"	f
+push	32.expr.c	/^void push(double f)$/;"	f
+qsort	23.pointer-arrays.c	/^void qsort(char *v[], int left, int right)$/;"	f
+qsort	24.pointer-arrays-without-alloc.c	/^void qsort(char *v[], int left, int right)$/;"	f
+qsort	38.pointers-to-functions.c	/^void qsort(void *v[], int left, int right,$/;"	f
+qsort	39.sort-with-r.c	/^void qsort(void *v[], int left, int right,$/;"	f
+qsort	40.sort-with-f.c	/^void qsort(void *v[], int left, int right,$/;"	f
+qsort	41.sort-with-d.c	/^void qsort(void *v[], int left, int right,$/;"	f
+readlines	23.pointer-arrays.c	/^int readlines(char *lineptr[], int maxlines)$/;"	f
+readlines	24.pointer-arrays-without-alloc.c	/^int readlines(char *lineptr[], int maxlines)$/;"	f
+readlines	readlines-writelines.c	/^int readlines(char *lineptr[], int maxlines)$/;"	f
+reverse	22.itoa.c	/^void reverse(char *s)$/;"	f
+sp	32.expr.c	/^int sp = 0;$/;"	v
+strcpyArray	9.strcpy-array-subscript.c	/^void strcpyArray(char *s, char *t)$/;"	f
+strend	16.strend.c	/^int strend(char *s, char *t)$/;"	f
+strlen	5.strlen-pointer.c	/^int strlen(char *s)$/;"	f
+strlen	8.strlen-address-arithmetic.c	/^int strlen(char *s)$/;"	f
+strstore	24.pointer-arrays-without-alloc.c	/^char strstore[ARR_SIZE];$/;"	v
+strtolower	case-convert.c	/^void strtolower(const char *src, char *dst)$/;"	f
+swap	2.swap.c	/^void swap(int *px, int *py)$/;"	f
+swap	23.pointer-arrays.c	/^void swap(char *v[], int i, int j)$/;"	f
+swap	24.pointer-arrays-without-alloc.c	/^void swap(char *v[], int i, int j)$/;"	f
+swap	38.pointers-to-functions.c	/^void swap(void *v[], int i, int j)$/;"	f
+swap	39.sort-with-r.c	/^void swap(void *v[], int i, int j)$/;"	f
+swap	40.sort-with-f.c	/^void swap(void *v[], int i, int j)$/;"	f
+swap	41.sort-with-d.c	/^void swap(void *v[], int i, int j)$/;"	f
+token	42.dcl.c	/^char token[MAXTOKEN];	\/\/ last token string$/;"	v
+token	43.dcl-error-handle.c	/^char token[MAXTOKEN];	\/\/ last token string$/;"	v
+token	44.undcl.c	/^char token[MAXTOKEN];	\/\/ last token string$/;"	v
+tokentype	42.dcl.c	/^int tokentype;	\/\/ type of last token$/;"	v
+tokentype	43.dcl-error-handle.c	/^int tokentype;	\/\/ type of last token$/;"	v
+tokentype	44.undcl.c	/^int tokentype;	\/\/ type of last token$/;"	v
+ungetch	getch.c	/^void ungetch(int c)$/;"	f
+ungetchOne	getch.c	/^void ungetchOne(int c)$/;"	f
+ungetchs	getch.c	/^void ungetchs(char s[])$/;"	f
+val	32.expr.c	/^double val[MAXVAL];$/;"	v
+value	getch.c	/^int value = EOF;$/;"	v
+writelines	23.pointer-arrays.c	/^void writelines(char *lineptr[], int nlines)$/;"	f
+writelines	24.pointer-arrays-without-alloc.c	/^void writelines(char *lineptr[], int nlines)$/;"	f
+writelines	readlines-writelines.c	/^void writelines(char *lineptr[], int nlines)$/;"	f

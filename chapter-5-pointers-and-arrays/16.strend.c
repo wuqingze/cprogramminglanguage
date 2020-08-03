@@ -3,18 +3,29 @@
 void test00();
 void test01();
 int _strend(char *s, char *t);
+int __strend(char *s, char *t);
 
 int main()
 {
-    test01();
+    //printf("%d\n",__strend("hello", "hello"));
+    printf("%d\n",__strend("world", "hello"));
+    printf("%d\n",__strend("world", "ld"));
+    printf("%d\n",__strend("world", ""));
+    printf("%d\n",__strend("", ""));
+    printf("%d\n",__strend("", "ld"));
+    printf("%d\n",__strend(NULL, "ld"));
+    printf("%d\n",__strend("", NULL));
+//    test01();
 	return 0;
 }
 
 void test00(){
 	int strend(char*, char*);
 
-	char *s = "qweasdzxc123Hello";
-	char *t = "Hello";
+//	char *s = "qweasdzxc123Hello";
+//	char *t = "Hello";
+    char *s = "ed";
+    char *t = "dd";
 	int end = strend(s, t);
 	printf("%d\n", end);
 }
@@ -22,8 +33,10 @@ void test00(){
 void test01(){
 	int strend(char*, char*);
 
-	char *s = "qweasdzxc123Hello";
-	char *t = "Hello";
+	//char *s = "qweasdzxc123Hello";
+//	char *t = "Hello";
+    char *s = "ed";
+    char *t = "dd";
 	int end = _strend(s, t);
 	printf("%d\n", end);
 }
@@ -71,3 +84,22 @@ int strend(char *s, char *t)
 		return 0;
 }
 
+int __strend(char *s, char *t){
+    if(NULL == s || NULL == t)
+        return 0;
+    char *pres = s-1;
+    char *pret = t-1;
+
+    while(*s)
+        s ++;
+
+    while(*t)
+        t ++;
+
+    while( s!= pres && t!=pret && *s-- == *t--)
+        ;
+    if(pret == t)
+        return 1;
+    else
+        return 0;
+}

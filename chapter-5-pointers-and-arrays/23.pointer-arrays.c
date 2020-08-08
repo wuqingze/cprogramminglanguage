@@ -24,6 +24,8 @@ void _qsort(char v[], int left, int right);
 int partition(char v[], int left, int right);
 void _swap(char *v, int i, int j);
 void swap(char *v[], int i, int j);
+void __qsort(char v[], int left, int right);
+void test06();
 
 char *strs[] = {
     "apple1",
@@ -49,7 +51,7 @@ int si = 0;
 
 int main()
 {
-    test05();
+    test06();
 	return 0;
 }
 
@@ -170,15 +172,34 @@ int _mygetline(char *s, int lim){
 }
 
 void _qsort(char v[], int left, int right){
-    printf("value:%s, left:%d, right:%d\n", v, left, right);
+//    printf("value:%s, left:%d, right:%d\n", v, left, right);
     if(left >= right){
         return;
     }
 
     int index = partition(v, left, right);
-    printf("value:%s, left:%d, right:%d, index:%d\n", v, left, right, index);
+//    printf("value:%s, left:%d, right:%d, index:%d\n", v, left, right, index);
     _qsort(v, left, index-1);
     _qsort(v, index+1, right);
+}
+
+void __qsort(char v[], int left, int right){
+    if(v == NULL || left >= right){
+        return;
+    }
+
+    int i = left -1;
+    char gap = v[right];
+    int j = left;
+    while(j<=right){
+        if(v[j] <= gap){
+            i += 1;
+            _swap(v, i, j);
+        }
+        j += 1;
+    }
+    __qsort(v, left , i-1);
+    __qsort(v, i+1, right);
 }
 
 int partition(char v[], int left, int right){
@@ -254,5 +275,19 @@ void test05(){
     char a[] = {'e', 'f', 'g', 'a', 'b', 'c', 'd'};
     printf("-------%s\n", a);
     _qsort(a, 0, sizeof(a)-1);
+    printf("-------%s\n", a);
+}
+
+void test06(){
+    //char a[] = {'e', 'f', 'g', 'a', 'b', 'c', 'd'};
+    //char a[] = {'e'};
+    //char a[] = {'a', 'b', 'c'};
+    //char a[] = {'c', 'b', 'a'};
+    //char a[] = {};
+    char *a;
+    printf("%ld\n", sizeof(a));
+    return ;
+    printf("-------%s\n", a);
+    __qsort(a, 0, sizeof(a)-1);
     printf("-------%s\n", a);
 }

@@ -26,6 +26,7 @@ void _swap(char *v, int i, int j);
 void swap(char *v[], int i, int j);
 void __qsort(char v[], int left, int right);
 void test06();
+void _qsortstr(char v[], int left, int right);
 
 char *strs[] = {
     "apple1",
@@ -202,6 +203,8 @@ void __qsort(char v[], int left, int right){
     __qsort(v, i+1, right);
 }
 
+void _qsortstr(char v[], int left, int right){
+}
 int partition(char v[], int left, int right){
     int i = left -1;
     char x = v[right];
@@ -282,11 +285,8 @@ void test06(){
     //char a[] = {'e', 'f', 'g', 'a', 'b', 'c', 'd'};
     //char a[] = {'e'};
     //char a[] = {'a', 'b', 'c'};
-    //char a[] = {'c', 'b', 'a'};
+    char a[] = {'c', 'b', 'a'};
     //char a[] = {};
-    char *a;
-    printf("%ld\n", sizeof(a));
-    return ;
     printf("-------%s\n", a);
     __qsort(a, 0, sizeof(a)-1);
     printf("-------%s\n", a);

@@ -353,3 +353,5 @@ void printarr(char *a[]){
         printf("%s\n", *a++);
     }
 }
+
+//test

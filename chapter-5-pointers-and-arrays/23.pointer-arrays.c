@@ -17,6 +17,9 @@ void test02();
 void test03();
 void test04();
 void test05();
+void test06();
+void test07();
+void test08();
 int _mygetline(char *s, int lim);
 void qsort(char *lineptr[], int left, int right);
 void _strcpy(char *p, char *line);
@@ -26,7 +29,9 @@ void _swap(char *v, int i, int j);
 void swap(char *v[], int i, int j);
 void __qsort(char v[], int left, int right);
 void test06();
-void _qsortstr(char v[], int left, int right);
+void _qsortstr(char *v[], int left, int right);
+void strswap(char *v[], int i, int j);
+void printarr(char *a[]);
 
 char *strs[] = {
     "apple1",
@@ -52,7 +57,7 @@ int si = 0;
 
 int main()
 {
-    test06();
+    test07();
 	return 0;
 }
 
@@ -203,8 +208,25 @@ void __qsort(char v[], int left, int right){
     __qsort(v, i+1, right);
 }
 
-void _qsortstr(char v[], int left, int right){
+void _qsortstr(char *v[], int left, int right){
+   if(v == NULL || left >= right){
+       return;
+   }
+
+   int i = left -1;
+   char *gap = v[right];
+   int j = left;
+   while(j<=right){
+       if(strcmp( v[j], gap) <=0 ){
+           i += 1;
+           strswap(v, i, j);
+       }
+       j += 1;
+   }
+   _qsortstr(v, left, i-1);
+   _qsortstr(v, i+1, right);
 }
+
 int partition(char v[], int left, int right){
     int i = left -1;
     char x = v[right];
@@ -257,6 +279,12 @@ void _strcpy(char *p, char *line){
     *p = '\0';
 }
 
+void strswap(char *v[], int i, int j){
+    char *t = v[i];
+    v[i] = v[j];
+    v[j] = t;
+}
+
 void test03(){
     char a[] ={'e', 'f', 'g', 'a', 'b', 'c', 'd'};
     void _swap(char *v, int i, int j);
@@ -290,4 +318,38 @@ void test06(){
     printf("-------%s\n", a);
     __qsort(a, 0, sizeof(a)-1);
     printf("-------%s\n", a);
+}
+
+
+void test07(){
+    printf("-------------\n");
+    char *a[MAXLINES] = {
+        "hello3",
+        "hello2",
+        "hello1",
+    };
+    char **ptr = a;
+    while(*ptr){
+        printf("--%s\n", *ptr++);
+    }
+
+    //printarr(a);
+    printf("-------------\n");
+    _qsortstr(a, 0, 2);
+    printarr(a);
+}
+
+void test08(){
+    char *a[MAXLINES] = {
+        "hello",
+        "world",
+        "wuqingze"
+    };
+    printarr(a);
+}
+
+void printarr(char *a[]){
+    while(*a){
+        printf("%s\n", *a++);
+    }
 }

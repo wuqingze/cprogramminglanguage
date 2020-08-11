@@ -257,6 +257,15 @@ void qsort(char *v[], int left, int right)
 	qsort(v, last+1, right);
 }
 
+void fqsort(void *v[], int left, int right, int (*cmp)(void *, void *)){
+    if(left>=right){
+        return;
+    }
+
+    int i = left -1;
+
+}
+
 void _swap(char *v, int i, int j){
     char t ;
     t = v[i];

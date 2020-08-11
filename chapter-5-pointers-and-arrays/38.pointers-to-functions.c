@@ -6,15 +6,30 @@ char *lineptr[MAXLINES];
 
 int readlines(char *lineptr[], int nlines);
 void writelines(char *lineptr[], int nlines);
-
+int _readlines(char *lineptr, int x);
 void qsort(void *lineptr[], int left, int right,
 			int (*comp)(void *, void *));
 
 int numcmp(const char *, const char *);
 
+char *a[] = {
+    "hello1",
+    "hello2",
+    "hello3"
+
+};
+int clen = 3;
 // gcc 38.pointers-to-functions.c numcmp.c readlines-writelines.c 6.alloc.c
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
+
+    char *cc;
+    printf("-----\n");
+    while(_readlines(cc, 0)>=0){
+        printf("--%s\n", cc);
+    }
+    return 0;
+
 	int nlines;
 	int numeric = 0;
 
@@ -57,3 +72,19 @@ void swap(void *v[], int i, int j)
 	v[j] = temp;
 }
 
+int _readlines(char *lineptr, int m){
+    printf("clen:%d\n", clen);
+    if(clen<=0){
+        return -1;
+    }
+    clen -= 1;
+    char *ptr = a[clen];
+    int i = 0;
+    *lineptr = *ptr;
+    printf("%c\n", *ptr++);
+//    while((*lineptr++ = *ptr++) != '\0'){
+//        printf("i%d\n", i);
+//        i += 1;
+//    }
+    return i;
+}

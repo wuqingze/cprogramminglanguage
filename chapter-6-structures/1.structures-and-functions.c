@@ -16,7 +16,7 @@ struct rect {
 	struct point pt2;
 };
 
-main()
+int main()
 {
 	struct rect screen;
 	struct point middle;

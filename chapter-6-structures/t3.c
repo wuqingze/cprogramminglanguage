@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 #define alen 100
 #define NKEYS (sizeof keytab / sizeof keytab[0])
@@ -7,6 +8,9 @@ int main(int argc, char *argv[]){
     //char *data[] = {"hello", "world", "i", "am", "wuqingze"};
     //char *data[alen] = {"hello", "world", "i", "am", "wuqingze"};
     char *data[] = {"hello", "world", "i", "am", "wuqingze"};
+
+    printf("sizeof data:%ld\n", sizeof data);
+    printf("sizeof data[0]:%ld\n", sizeof data[0]);
 
     int len = sizeof data / sizeof data[0];
     printf("len:%d\n", len);

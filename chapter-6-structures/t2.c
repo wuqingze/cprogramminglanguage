@@ -23,12 +23,20 @@ int main()
 
 	root = NULL;
     char *data[] = { "now", "is", "the", "for", "mem",
+        "now", "is", "the", "for", "mem",
+        "of", "time", "all", "good", "party", "their",
+        "of", "time", "all", "good", "party", "their",
+        "of", "time", "all", "good", "party", "their",
         "of", "time", "all", "good", "party", "their",
         "to", "aid", "come"};
 
-	while (getword(word, MAXWORD) != EOF)
-		if (isalpha(word[0]))
-			root = addtree(root, word);
+//	while (getword(word, MAXWORD) != EOF)
+//		if (isalpha(word[0]))
+//			root = addtree(root, word);
+    int len = sizeof data / sizeof data[0];
+    for(int i=0; i<len; i++){
+        root = addtree(root, data[i]);
+    }
 	treeprint(root);
 
 	return 0;
@@ -66,7 +74,7 @@ void treeprint(struct tnode *p)
 
 struct tnode *talloc(void)
 {
-	return (struct tnode *) malloc(sizeof(struct tnode));
+    return (struct tnode *) malloc(sizeof(struct tnode));
 }
 
 char *mystrdup(char *s)

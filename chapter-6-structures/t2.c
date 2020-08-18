@@ -12,7 +12,9 @@ struct tnode {
 	struct tnode *right;
 };
 
+char *newstr(char *s);
 struct tnode *addtree(struct tnode *, char *);
+struct tnode *_addnode(struct tnode *, char *);
 void treeprint(struct tnode *);
 
 // gcc 5.words-count-binary-tree.c getch.c
@@ -35,7 +37,8 @@ int main()
 //			root = addtree(root, word);
     int len = sizeof data / sizeof data[0];
     for(int i=0; i<len; i++){
-        root = addtree(root, data[i]);
+//        root = addtree(root, data[i]);
+        root = _addnode(root, data[i]);
     }
 	treeprint(root);
 
@@ -44,6 +47,26 @@ int main()
 
 struct tnode *talloc(void);
 char *mystrdup(char *s);
+
+struct tnode *_addnode(struct tnode *root, char *value){
+
+    if(root == NULL){
+        struct tnode *node = (struct tnode*) malloc(sizeof(struct tnode));
+        node->word = newstr(value); 
+        node->count += 1;
+        return node;
+    }
+
+    int comp = strcmp(value, root->word);
+    if(comp == 0){
+        root->count += 1;
+    }else if(comp > 0){
+        root->right = _addnode(root->right, value);
+    }else{
+        root->left = _addnode(root->left, value);
+    }
+    return root;
+}
 
 struct tnode *addtree(struct tnode *p, char *w)
 {
@@ -88,3 +111,10 @@ char *mystrdup(char *s)
 	return p;
 }
 
+char *newstr(char *s){
+    char *p = (char*) malloc(strlen(s));
+    char *t = p;
+    while(*t++ = *s++)
+        ;
+    return p;
+}

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	FILE *fp;
 	void filecopy(FILE *, FILE *);
@@ -23,8 +23,7 @@ main(int argc, char *argv[])
 		fprintf(stderr, "%s: error writing stdout\n", prog);
 		exit(2);
 	}
-	
-	exit(0);
+    return 0;
 }
 
 void filecopy(FILE *ifp, FILE *ofp)
